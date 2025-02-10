@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zajno Digital Studio</title>
     <link rel="icon" href="./images/logo/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
@@ -138,15 +139,58 @@
                     <h3>We dare to be different: to experiment, innovate, bring things into being, and spark emotions in the hearts of people interacting with us. We proudly stand with our heads up in the midst of today’s reality that is oversaturated with templated solutions, and we invite you to join us in creating something truly unique.</h3>
                 </div>
             </div>
-            <div class="playgroundbottom"></div>
+            <div class="playgroundbottom">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/swiper/swiperImg1.avif" alt="">
+                            <h6>Motion.ed — 2023</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/swiper/swiperImg2.avif" alt="">
+                            <h6>The power of sound — 2019</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/swiper/swiperImg3.avif" alt="">
+                            <h6>TL/E — 2023</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/swiper/swiperImg4.avif" alt="">
+                            <h6>Zajno Grid — 2018</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/swiper/swiperImg5.avif" alt="">
+                            <h6>Playlists — 2020</h6>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/swiper/swiperImg6.avif" alt="">
+                            <h6>Journey — Coming soon</h6>
+                        </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- 715tm -->
     <!-- <svg id="ho-wo-z15" viewBox="0 0 1876 492" fill="#ff3928"><polygon points="1780.262,62.091 1790.349,62.091 1790.349,13.557 1809.383,13.557 1809.383,4.42 1761.038,4.42 1761.038,13.557 1780.262,13.557"></polygon><polygon points="1827.845,16.603 1843.833,62.283 1850.686,62.283 1866.673,16.603 1866.673,62.091 1876,62.091 1876,4.42 1862.296,4.42 1847.641,48.198 1832.794,4.42 1818.71,4.42 1818.71,62.091 1827.845,62.091"></polygon><path d="M1399.753,425.882c20.179-9.9,42.453-14.85,66.82-14.85c40.359,0,73.102,13.706,98.231,41.12c10.869,11.857,19.382,25.141,25.55,39.848h165.578c-3.129-17.144-7.62-33.668-13.511-49.557c-12.564-33.885-30.649-63.393-54.256-88.522c-24.367-25.129-53.303-44.356-86.809-57.682c-33.505-13.328-70.056-19.989-109.653-19.989c-27.414,0-53.495,4.378-78.243,13.134c-24.748,8.757-46.26,21.513-64.536,38.265l15.991-177.044h344.953V5.544h-474.025l-36.551,440.898l153.058,19.418C1363.772,449.107,1379.574,435.781,1399.753,425.882z"></path><path d="M893.19,492h169.049V0.974H933.167c-4.569,46.451-18.847,80.337-42.833,101.659c-23.987,21.321-62.632,33.886-115.936,37.693l-74.245,6.854v125.646H893.19V492z"></path><polygon points="158.495,492 360.103,492 640.788,133.472 640.788,5.544 0,5.544 0,150.606 427.192,150.606"></polygon></svg> -->
 
     <!-- <canvas class="canvas"></canvas>
     <script type="module" src="./src/main.js"></script> -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 4,
+          spaceBetween: 100,
+          freeMode: true,
+          pagination: {
+            clickable: false,
+          },
+        });
+      </script>
 </body>
+
 </html>

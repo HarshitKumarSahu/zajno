@@ -247,4 +247,45 @@ nav .navsocial{
 .playground .playgroundtop .playgroundtopright h3 {
     width: 400px;
 }
+.playground .playgroundbottom {
+    width: 100%;
+    height: 63vh;
+    background-color: transparent;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide h6 {
+    padding-top: 5px;
+}
+.swiper-slide:nth-child(even) {
+    height: 300px;
+    top: 8vw;
+}
+.swiper-slide:nth-child(odd) {
+    height: 250px;
+    top: 0;
+}
 
