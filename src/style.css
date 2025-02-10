@@ -144,3 +144,107 @@ nav .navsocial{
     object-fit: cover;
 }
 
+.studio {
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.studio h3 {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 100;
+}
+.studio .studiotop {
+    padding: 5vw 0;
+    border-top: 1.25px solid #1A1A1A;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.studio .studiotop .studiotopleft {
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.studio .studiotop .studiotopright {
+    width: 83%;
+}
+.studio .studiotop .studiotopright h3 {
+    width: 400px;
+}
+.studio .studiobottom {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom:  5vw;
+    border-bottom: 1.25px solid #1A1A1A;
+}
+.studio .studiobottom .studiobottomleft {
+    width: 50%;
+}
+.studio .studiobottom .studiobottomleft img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.studio .studiobottom .studiobottomright {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10vw;
+}
+.studio .studiobottom .studiobottomright .studiobottomrightpart1 {
+    border-left: 1.25px solid #1A1A1A;
+    border-right: 1.25px solid #1A1A1A;
+    padding-left: 10px;
+    padding-right: 3vw;
+}
+.studio .studiobottom .studiobottomright .studiobottomrightpart1 h3:nth-child(1) , .studio .studiobottom .studiobottomright h3:nth-child(1) {
+    margin-bottom: 1.25vw;
+}
+.studio .studiobottom .studiobottomright .studiobottomrightpart2 {
+    padding-left: 10px;
+}
+
+.playground {
+    padding: 0 15px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.playground h3 {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 100;
+}
+.playground .playgroundtop {
+    padding: 5vw 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.playground .playgroundtop .playgroundtopleft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.playground .playgroundtop .playgroundtopright {
+    border-left: 1.25px solid #1A1A1A;
+    padding-left: 10px;
+}
+.playground .playgroundtop .playgroundtopright h3 {
+    width: 400px;
+}
+
