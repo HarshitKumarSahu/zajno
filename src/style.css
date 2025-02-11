@@ -298,3 +298,41 @@ nav .navsocial{
     padding: 0 15px;
     
 }
+
+.footer {
+    width: 100%;
+    padding: 5vw 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer h3 {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 100;
+}
+.footerleft {
+    width: 50%;
+}
+.footerleft img {
+    width: 8vw;
+}
+.footerright {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.footerright .footerrightpart1 {
+    border-left: 1.25px solid #1A1A1A;
+    border-right: 1.25px solid #1A1A1A;
+    padding-left: 10px;
+    padding-right: 6vw;
+}
+.footerright .footerrightpart1 .last {
+    margin-top: 18px;
+    padding-bottom: 20px;
+}
+.footerright .footerrightpart2 {
+    padding-left: 10px;
+}
