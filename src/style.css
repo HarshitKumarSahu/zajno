@@ -30,7 +30,7 @@ a {
   position: relative;
 }
 nav {
-    padding: 15px;
+    padding: 1.465vw;
     position: absolute;
     top: 0;
     left: 0;
@@ -40,16 +40,15 @@ nav {
     justify-content: space-between;
 }
 nav a {
-    font-size: 11px;
+    font-size: 1.074vw;
     font-weight: 100;
-    line-height: 13px;
+    line-height: 1.27vw;
 }
 nav .navmenu {
     width: 18%;
     display: flex;
     flex-direction: column;
     padding-left: 11%;
-    /* background-color: aqua; */
 }
 nav .navsocial{
     display: flex;
@@ -64,8 +63,9 @@ nav .navsocial{
 
 .video {
     width: 100vw;
-    height: 100vh;
-    padding: 15px;
+    /* height: 100vh; */
+    height: 55vw;
+    padding: 1.465vw;
 }
 .video img {
     width: 100%;
@@ -75,15 +75,15 @@ nav .navsocial{
 
 .work {
     margin-top: 3vw;
-    padding: 0 15px;
+    padding: 0 1.465vw;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 .work  h3 {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.953vw;
+    line-height: 2.246vw;
     font-weight: 100;
 }
 .work .workpart1 {
@@ -91,7 +91,7 @@ nav .navsocial{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 0.781vw;
 }
 .work .workpart2 {
     width: 83%;
@@ -104,7 +104,7 @@ nav .navsocial{
     margin-bottom: 8vw;
 }
 .work .workpart2 .workpart2top h3:nth-child(1) {
-    width: 400px;
+    width: 39.063vw;
 }
 .work .workpart2 .workpart2bottom {
     width: 100%;
@@ -115,7 +115,7 @@ nav .navsocial{
 }
 .work .workpart2 .workpart2bottom .workpart2bottomelem {
     width: 100%;
-    padding: 18px 0;
+    padding: 1.758vw 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -134,8 +134,8 @@ nav .navsocial{
     color: #FF3828;
 }
 .work .workpart2 .workpart2bottom .workpart2bottomelem .workpart2bottomelemimg {
-    width: 200px;
-    height: 200px;
+    width: 19.531vw;
+    height: 19.531vw;
     background-color: blueviolet;
 }
 .work .workpart2 .workpart2bottom .workpart2bottomelem .workpart2bottomelemimg img {
@@ -145,7 +145,7 @@ nav .navsocial{
 }
 
 .studio {
-    padding: 0 15px;
+    padding: 0 1.465vw;
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -153,8 +153,8 @@ nav .navsocial{
     flex-direction: column;
 }
 .studio h3 {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.953vw;
+    line-height: 2.246vw;
     font-weight: 100;
 }
 .studio .studiotop {
@@ -170,13 +170,13 @@ nav .navsocial{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 0.781vw;
 }
 .studio .studiotop .studiotopright {
     width: 83%;
 }
 .studio .studiotop .studiotopright h3 {
-    width: 400px;
+    width: 39.063vw;
 }
 .studio .studiobottom {
     width: 100%;
@@ -199,33 +199,33 @@ nav .navsocial{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 10vw;
+    padding-left: 0.977vw;
 }
 .studio .studiobottom .studiobottomright .studiobottomrightpart1 {
     border-left: 1.25px solid #1A1A1A;
     border-right: 1.25px solid #1A1A1A;
-    padding-left: 10px;
+    padding-left: 0.977vw;
     padding-right: 3vw;
 }
 .studio .studiobottom .studiobottomright .studiobottomrightpart1 h3:nth-child(1) , .studio .studiobottom .studiobottomright h3:nth-child(1) {
     margin-bottom: 1.25vw;
 }
 .studio .studiobottom .studiobottomright .studiobottomrightpart2 {
-    padding-left: 10px;
+    padding-left: 0.977vw;
 }
 
 .playground {
-    padding: 0 15px;
+    padding: 0 1.465vw;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    border-bottom: 1.25px solid #1A1A1A;
+    
 }
 .playground h3 {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.953vw;
+    line-height: 2.246vw;
     font-weight: 100;
 }
 .playground .playgroundtop {
@@ -239,18 +239,18 @@ nav .navsocial{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 0.781vw;
 }
 .playground .playgroundtop .playgroundtopright {
     border-left: 1.25px solid #1A1A1A;
-    padding-left: 10px;
+    padding-left: 0.977vw;
 }
 .playground .playgroundtop .playgroundtopright h3 {
-    width: 400px;
+    width: 39.063vw;
 }
 .playground .playgroundbottom {
     width: 100%;
-    height: 100vh;
+    height: 60vw;
     background-color: transparent;
     position: relative;
 }
@@ -262,7 +262,7 @@ nav .navsocial{
 .playground .playgroundbottom .swiper .swiper-slide {
     position: relative;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.758vw;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -280,14 +280,14 @@ nav .navsocial{
     object-fit: cover;
 }
 .playground .playgroundbottom .swiper .swiper-slide h6 {
-    padding-top: 5px;
+    padding-top: 0.488vw;
 }
 .playground .playgroundbottom .swiper .swiper-slide:nth-child(even) {
-    height: 300px;
+    height: 29.297vw;
     top: 8vw;
 }
 .playground .playgroundbottom .swiper .swiper-slide:nth-child(odd) {
-    height: 250px;
+    height: 24.414vw;
     top: 0;
 }
 .playground .playgroundbottom .tm715 {
@@ -295,20 +295,20 @@ nav .navsocial{
     bottom:0;
     left:0;
     width: 100%;
-    padding: 0 15px;
-    
+    padding: 1.465vw 0 0 0;  
+    border-bottom: 1.25px solid #1A1A1A;
 }
 
 .footer {
     width: 100%;
-    padding: 5vw 15px;
+    padding: 5vw 1.465vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 .footer h3 {
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 1.953vw;
+    line-height: 2.246vw;
     font-weight: 100;
 }
 .footerleft {
@@ -326,13 +326,13 @@ nav .navsocial{
 .footerright .footerrightpart1 {
     border-left: 1.25px solid #1A1A1A;
     border-right: 1.25px solid #1A1A1A;
-    padding-left: 10px;
+    padding-left: 0.977vw;
     padding-right: 6vw;
 }
 .footerright .footerrightpart1 .last {
-    margin-top: 18px;
-    padding-bottom: 20px;
+    margin-top: 1.758vw;
+    padding-bottom: 1.953vw;
 }
 .footerright .footerrightpart2 {
-    padding-left: 10px;
+    padding-left: 0.977vw;
 }
