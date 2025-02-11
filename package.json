@@ -12,6 +12,8 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
+    "locomotive-scroll": "^5.0.0-beta.21",
+    "swiper": "^11.2.2",
     "three": "^0.173.0"
   }
 }
