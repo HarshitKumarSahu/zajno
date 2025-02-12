@@ -23,6 +23,9 @@ html, body {
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+img {
+    opacity: 0;
+}
 a {
     text-decoration: none;
     color: #1A1A1A;
