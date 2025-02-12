@@ -18,11 +18,14 @@
 html, body {
     width: 100%;
     height: 100%;
+}
+body {
     background-color: #EBEBEB;
     font-family: zajno;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
+
 img {
     opacity: 0;
 }
@@ -38,6 +41,7 @@ a {
   position: relative;
 }
 nav {
+    background-color: transparent;
     padding: 1.465vw;
     position: absolute;
     top: 0;
@@ -64,6 +68,7 @@ nav .navsocial{
 }
 .branding {
     width: 100%;
+    background-color: transparent;
 }
 .branding img {
     width: 100%;
@@ -144,7 +149,7 @@ nav .navsocial{
 .work .workpart2 .workpart2bottom .workpart2bottomelem .workpart2bottomelemimg {
     width: 19.531vw;
     height: 19.531vw;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 .work .workpart2 .workpart2bottom .workpart2bottomelem .workpart2bottomelemimg img {
     width: 100%;
@@ -271,7 +276,7 @@ nav .navsocial{
     position: relative;
     text-align: center;
     font-size: 1.758vw;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,7 +351,8 @@ nav .navsocial{
 }
 
 .canvas {
-    z-index: 10;
+    /* display: none; */
+    z-index: -1;
     width: 100%;
     height: 100%;
     position: fixed;

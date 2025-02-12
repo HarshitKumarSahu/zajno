@@ -50,6 +50,11 @@ images.forEach(image => {
   const material = new THREE.ShaderMaterial({
     vertexShader: vertex,
     fragmentShader: fragment,
+    uniforms: {
+      uTexture : {
+        value : texture
+      }
+    }
   });
   const geometry = new THREE.PlaneGeometry(imageBounds.width,imageBounds.height);
   const plane = new THREE.Mesh(geometry  , material);
@@ -61,46 +66,39 @@ images.forEach(image => {
   planes.push(plane)
   scene.add(plane);
 })
-// // Geometry & Material
-// const geometry = new THREE.PlaneGeometry(100,100);
-// const material = new THREE.MeshBasicMaterial({
-//   color: 'red'
-// });
-// // Mesh
-// const mesh = new THREE.Mesh(geometry, material);
-// scene.add(mesh);
+
+function updatePlanePosition() {
+  planes.forEach((plane , index) => {
+    const image = images[index];
+    const imageBounds = image.getBoundingClientRect();
+    plane.position.set(
+      imageBounds.left - window.innerWidth / 2 + imageBounds.width / 2 , //x
+      -imageBounds.top + window.innerHeight / 2 - imageBounds.height / 2 , //y
+      0 //z
+    );
+  })
+}
 
 // Resize handler
 const handleResize = () => {
   const width = window.innerWidth;
   const height = window.innerHeight;
-  
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
-  
   renderer.setSize(width, height);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  updatePlanePosition()
 };
-
 window.addEventListener('resize', handleResize);
 handleResize();
 
-// Clock
-const clock = new THREE.Clock();
-
 // Animation
 const animate = () => {
-  const elapsedTime = clock.getElapsedTime();
   
-  // Update uniforms
-  // material.uniforms.uTime.value = elapsedTime;
-  
-  // Render
   renderer.render(scene, camera);
-  
   requestAnimationFrame(animate);
+  updatePlanePosition()
 };
-
 animate();
 
 
