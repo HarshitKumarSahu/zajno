@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import vertex from '../shaders/vertex.glsl';
+import fragment from '../shaders/fragment.glsl';
 import LocomotiveScroll from 'locomotive-scroll';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
@@ -45,7 +47,10 @@ const planes =[];
 images.forEach(image => {
   const imageBounds = image.getBoundingClientRect();
   const texture = new THREE.TextureLoader().load(image.src);
-  const material = new THREE.MeshBasicMaterial({ map : texture });
+  const material = new THREE.ShaderMaterial({
+    vertexShader: vertex,
+    fragmentShader: fragment,
+  });
   const geometry = new THREE.PlaneGeometry(imageBounds.width,imageBounds.height);
   const plane = new THREE.Mesh(geometry  , material);
   plane.position.set(
