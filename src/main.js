@@ -101,14 +101,14 @@ if (window.innerWidth > 600) {
     const intersects = raycaster.intersectObjects(planes);
 
     planes.forEach(plane => {
-      gsap.to(plane.material.uniforms.uHover, { value: 0, duration: 0.5 });
+      gsap.to(plane.material.uniforms.uHover, { value: 0, duration: 0.8, ease: "linear.inOut" });
     })
 
     if (intersects.length > 0) {
       const intersectedPlane = intersects[0].object;
       const uv = intersects[0].uv;
-      gsap.to(intersectedPlane.material.uniforms.uMouse.value, { x: uv.x, y: uv.y, duration: 0.5 });
-      gsap.to(intersectedPlane.material.uniforms.uHover, { value: 1, duration: 0.5 });
+      gsap.to(intersectedPlane.material.uniforms.uMouse.value, { x: uv.x, y: uv.y, duration: 0.3, ease: "linear.inOut" });
+      gsap.to(intersectedPlane.material.uniforms.uHover, { value: 1, duration: 0.3, ease: "linear.inOut" });
     }
   });
 
