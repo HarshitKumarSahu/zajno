@@ -26,7 +26,7 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 // Setup
-// if (window.innerWidth > 600) {
+if (window.innerWidth > 600) {
   const scene = new THREE.Scene();
   const cameraDistance = 5;
   const fov = 2 * Math.atan((window.innerHeight / 2) / cameraDistance) * (180 / Math.PI);
@@ -132,10 +132,10 @@ const swiper = new Swiper(".mySwiper", {
     updatePlanePosition();
   };
   animate();
-// }
-// else {
-//   document.querySelector(".canvas").style.display = "none";
-//   document.querySelectorAll("img").forEach(img => {
-//     img.style.opacity = "1";
-//   });
-// }
+}
+else {
+  document.querySelector(".canvas").style.display = "none";
+  document.querySelectorAll("img").forEach(img => {
+    img.style.opacity = "1";
+  });
+}
