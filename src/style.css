@@ -34,6 +34,50 @@ a {
     color: #1A1A1A;
 }
 
+main {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #EBEBEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.loader-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+circle {
+    fill: none;
+    stroke: #1A1A1A;
+    stroke-width: 1;
+    stroke-dasharray: 628;
+    stroke-dashoffset: 628;
+    transition: stroke-dashoffset 0.1s linear;
+}
+.loader-container h1 {
+    font-size: 50px;
+    color: #1A1A1A;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
 .main {
     width: 100vw;
 }

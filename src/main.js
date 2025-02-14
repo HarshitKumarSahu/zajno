@@ -139,3 +139,38 @@ else {
     img.style.opacity = "1";
   });
 }
+
+function startLoader() {
+  let counterElem = document.querySelector("h1 span");
+  let circle = document.querySelector("circle");
+  let currentVal = 0;
+  let maxOffset = 628; // Full circle length
+  
+  function updateCounter() {
+      if (currentVal === 100) {
+          gsap.to("main", {
+              y: "-100vh",
+              delay:0.1,
+              duration: 0.4,
+              ease : "power2.inOut"
+          });
+          return;
+      }
+
+      currentVal += Math.floor(Math.random() * 10) + 2;
+
+      if (currentVal > 100) {
+          currentVal = 100;
+      }
+
+      counterElem.textContent = currentVal;
+      let offset = maxOffset - (maxOffset * (currentVal / 100));
+      circle.style.strokeDashoffset = offset;
+
+      let delay = Math.floor(Math.random() * 200) + 50;
+      setTimeout(updateCounter, delay);
+  }
+  updateCounter();
+}
+
+startLoader();
